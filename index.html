@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @media print {
+            body { 
+                margin: 0;
+                padding: 15px;
+                font-size: 11px;
+            }
+            .print-button { display: none; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            color: #34495e;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .checklist {
+            margin-left: 15px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            padding: 3px 0;
+        }
+
+        .checkbox {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            border: 2px solid #3498db;
+        }
+
+        .item-text {
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 8px 15px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .print-button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.print()" class="print-button">打印清单</button>
+    <h1>重要决策检查清单</h1>
+
+    <div class="section">
+        <div class="section-title">🔍 决策机制检查</div>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否已与家人充分沟通并征求意见？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否咨询过相关领域的专业人士？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否设置了至少3天的决策冷静期？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否完成了必要信息的多方验证？</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">⚠️ 风险评估要点</div>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">收益承诺是否符合市场常理？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否完全理解所有风险点？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">投资金额是否在可承受范围内？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否检查过对方的合法资质？</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">💡 认知确认事项</div>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否充分理解产品/项目的运作机制？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否能向他人清楚解释这个决策？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否考虑过最坏情况的应对方案？</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">✨ 行动核查清单</div>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否保留了所有重要文件的复印件？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否记录了所有关键人员的联系方式？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否设置了资金监控机制？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否约定了明确的退出机制？</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">📝 最终确认事项</div>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">所有上述项目是否都已确认？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否有任何直觉上的不适感？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">是否获得了家人的最终支持？</span>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <span class="item-text">决策是否经过了充分的时间考虑？</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
